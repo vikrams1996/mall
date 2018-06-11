@@ -178,6 +178,14 @@
     <Compile Include="Migrations\201806101723101_InitialModel.Designer.cs">
       <DependentUpon>201806101723101_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806110705139_ShopToTenantTable.cs" />
+    <Compile Include="Migrations\201806110705139_ShopToTenantTable.Designer.cs">
+      <DependentUpon>201806110705139_ShopToTenantTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806110722149_DropShopId.cs" />
+    <Compile Include="Migrations\201806110722149_DropShopId.Designer.cs">
+      <DependentUpon>201806110722149_DropShopId.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -245,6 +253,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\LeasingForm\Form.cshtml" />
+    <Content Include="Views\LeasingForm\Update.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -260,6 +269,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201806101723101_InitialModel.resx">
       <DependentUpon>201806101723101_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806110705139_ShopToTenantTable.resx">
+      <DependentUpon>201806110705139_ShopToTenantTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806110722149_DropShopId.resx">
+      <DependentUpon>201806110722149_DropShopId.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

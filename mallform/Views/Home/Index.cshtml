@@ -12,6 +12,7 @@
             <th scope="col">Address</th>
             <th scope="col">Contact No</th>
             <th scope="col">Pan No</th>
+            
         </tr>
     </thead>
 
@@ -23,13 +24,24 @@
         <tbody>
             <tr>
 
-                <td>@tenant.shopName</td>
+                <td>
+                    @Html.ActionLink(tenant.shopName , "Update", "LeasingForm" , new { id=tenant.Id}, null)
+                </td>
                 <td>@tenant.brandName</td>
                 <td>@tenant.Address</td>
                 <td>@tenant.mobileNo</td>
                 <td>@tenant.panNo</td>
+               
                 
+                    
+               
+
+
               
+
+
+
+
             </tr>
 
         </tbody>

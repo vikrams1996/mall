@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
 using mallform.Models;
+using mallform.ViewModel;
 
 namespace mallform.Controllers
 {
@@ -29,6 +30,9 @@ namespace mallform.Controllers
         [HttpPost]
         public ActionResult Form(Tenant Form)
         {
+
+
+
             var tenant = new Tenant
             {
                 shopName = Form.shopName,
@@ -37,19 +41,52 @@ namespace mallform.Controllers
                 mobileNo = Form.mobileNo,
                 panNo = Form.panNo
 
+
             };
 
 
 
             _context.Tenant.Add(tenant);
 
-
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Home");
         }
 
+
+
+            public ActionResult Update (int id)
+        {
+
+            
+
+            return View(_context.Tenant.Find(id));
+        }
+
+
+        [HttpPost]
+
+        public ActionResult Update (Tenant Model)
+        {
+            Tenant tenant = _context.Tenant.Where(m => m.Id == Model.Id).SingleOrDefault();
+            if(tenant!=null)
+            {
+
+                _context.Entry(tenant).CurrentValues.SetValues(Model);
+                _context.SaveChanges();
+
+                return RedirectToAction("Index", "Home");
+
+            }
+
+            return View(Model);
+        
+
+        }
+
       
+     
+
 
 
     }

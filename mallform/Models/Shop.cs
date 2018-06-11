@@ -16,6 +16,8 @@ namespace mallform.Models
 
         public string shopNo { get; set; }
 
+        
+
 
     }
 }

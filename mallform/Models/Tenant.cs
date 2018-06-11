@@ -18,5 +18,8 @@ namespace mallform.Models
         public string mobileNo { get; set; }
 
         public string panNo { get; set; }
+
+        
+
     }
 }

@@ -20,18 +20,14 @@ namespace mallform.Controllers
         }
         public ActionResult Index()
         {
-            var TenantList = _Context.Tenant;  
-            return View(TenantList);
+            var tenant = _Context.Tenant;
+
+            return View(tenant);
         }
 
-        public ActionResult Edit( )
-        {
+       
+        
 
-  
-
-
-            return View();
-        }
 
 
         public ActionResult About()

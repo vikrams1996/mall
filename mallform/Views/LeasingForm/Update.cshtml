@@ -1,28 +1,26 @@
-﻿
-@model mallform.ViewModel.TenantFormViewModel
+﻿@model mallform.Models.Tenant
 @{
-    ViewBag.Title = "Form";
+    ViewBag.Title = "Update";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>Tenant Enquiry Form</h2>
 
+<h2>Update</h2>
 
-
-
-@using (Html.BeginForm("Update", "LeasingForm"))
-
+@using (Html.BeginForm("Update", "LeasingForm", FormMethod.Post))
 {
 
-    <label>
-        Shop Name
-    </label>
-    @Html.TextBoxFor(m => m.shopName, new { @class = "form-control " })
-
+    @Html.HiddenFor(x => x.Id)
 
     <label>
-        Brand Name
+        ShopName
     </label>
-    @Html.TextBoxFor(m => m.brandName, new { @class = "form-control " })
+
+    @Html.TextBoxFor(m=>m.shopName , new { @class = "form-control"})
+
+    <label>
+        BrandName
+    </label>
+    @Html.TextBoxFor(m=>m.brandName , new { @class ="form-control"})
 
     <label>
         Address
@@ -43,8 +41,5 @@
     @Html.TextBoxFor(m => m.panNo, new { @class = "form-control " })
 
 
-
-    <button type="submit" class="btn btn-primary">Submit </button>
-
-
+   <button type="submit" class="btn btn-primary">Save</button>
 }
