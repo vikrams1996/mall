@@ -84,8 +84,16 @@ namespace mallform.Controllers
 
         }
 
-      
-     
+        public ActionResult Delete (int id)
+        {
+
+            _context.Tenant.Remove(_context.Tenant.Find(id));
+            _context.SaveChanges();
+
+            return RedirectToAction("Index" , "Home");
+
+        }
+
 
 
 
