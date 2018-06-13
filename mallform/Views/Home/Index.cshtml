@@ -24,14 +24,15 @@
         <tbody>
             <tr>
 
-                <td>
-                    @Html.ActionLink(tenant.shopName , "Update", "LeasingForm" , new { id=tenant.Id}, null)
-                </td>
+                
+                <td>@tenant.shopName</td>
                 <td>@tenant.brandName</td>
                 <td>@tenant.Address</td>
                 <td>@tenant.mobileNo</td>
                 <td>@tenant.panNo</td>
+                <td>@Html.ActionLink("Update", "Update", "LeasingForm", new { id = tenant.Id }, null) </td>
                 <td>@Html.ActionLink("Delete", "Delete", "LeasingForm", new { id=tenant.Id }, null)</td>
+                
                 
                     
                

@@ -186,6 +186,14 @@
     <Compile Include="Migrations\201806110722149_DropShopId.Designer.cs">
       <DependentUpon>201806110722149_DropShopId.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806130539170_AppliedDataAnnotationsToTenantForm.cs" />
+    <Compile Include="Migrations\201806130539170_AppliedDataAnnotationsToTenantForm.Designer.cs">
+      <DependentUpon>201806130539170_AppliedDataAnnotationsToTenantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806130544283_AplliedNumberAnnotation.cs" />
+    <Compile Include="Migrations\201806130544283_AplliedNumberAnnotation.Designer.cs">
+      <DependentUpon>201806130544283_AplliedNumberAnnotation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -275,6 +283,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806110722149_DropShopId.resx">
       <DependentUpon>201806110722149_DropShopId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806130539170_AppliedDataAnnotationsToTenantForm.resx">
+      <DependentUpon>201806130539170_AppliedDataAnnotationsToTenantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806130544283_AplliedNumberAnnotation.resx">
+      <DependentUpon>201806130544283_AplliedNumberAnnotation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

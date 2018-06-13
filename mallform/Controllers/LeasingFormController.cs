@@ -26,14 +26,17 @@ namespace mallform.Controllers
 
             return View();
         }
-
+        
         [HttpPost]
-        public ActionResult Form(Tenant Form)
+        public ActionResult Form(TenantFormViewModel Form)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("Form", Form);
 
+            }
 
-
-            var tenant = new Tenant
+                var tenant = new Tenant
             {
                 shopName = Form.shopName,
                 brandName = Form.brandName,
@@ -45,11 +48,12 @@ namespace mallform.Controllers
             };
 
 
+           
+                _context.Tenant.Add(tenant);
 
-            _context.Tenant.Add(tenant);
+                _context.SaveChanges();
 
-            _context.SaveChanges();
-
+            
             return RedirectToAction("Index", "Home");
         }
 
@@ -68,6 +72,7 @@ namespace mallform.Controllers
 
         public ActionResult Update (Tenant Model)
         {
+         
             Tenant tenant = _context.Tenant.Where(m => m.Id == Model.Id).SingleOrDefault();
             if(tenant!=null)
             {
