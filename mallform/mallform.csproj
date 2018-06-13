@@ -194,6 +194,10 @@
     <Compile Include="Migrations\201806130544283_AplliedNumberAnnotation.Designer.cs">
       <DependentUpon>201806130544283_AplliedNumberAnnotation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806130725579_RequiredDataAnnotationsToTenantTable.cs" />
+    <Compile Include="Migrations\201806130725579_RequiredDataAnnotationsToTenantTable.Designer.cs">
+      <DependentUpon>201806130725579_RequiredDataAnnotationsToTenantTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -289,6 +293,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806130544283_AplliedNumberAnnotation.resx">
       <DependentUpon>201806130544283_AplliedNumberAnnotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806130725579_RequiredDataAnnotationsToTenantTable.resx">
+      <DependentUpon>201806130725579_RequiredDataAnnotationsToTenantTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

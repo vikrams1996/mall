@@ -12,15 +12,15 @@ namespace mallform.ViewModel
     {
 
         [Required]
-       
+       [StringLength(50)]
         public string shopName { get; set; }
         
         [Required]
- 
+        [StringLength(50)]
         public string brandName { get; set; }
 
         [Required]
-       
+        [StringLength(50)]
         public string Address { get; set; }
 
         [Required]
@@ -29,6 +29,7 @@ namespace mallform.ViewModel
 
         public string mobileNo { get; set; }
 
+        [StringLength(50)]
         [Required]
         public string panNo { get; set; }
 

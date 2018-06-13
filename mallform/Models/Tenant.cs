@@ -11,15 +11,18 @@ namespace mallform.Models
         public int Id { get; set; }
 
         [StringLength(50)]
+        [Required]
        
         public string shopName { get; set; }
 
-
+        [Required]
         [StringLength(50)]
         public string brandName { get; set; }
+        [Required]
 
         [StringLength(50)]
         public string Address { get; set; }
+        [Required]
 
         [DataType(DataType.PhoneNumber)]
         [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid phone number")]
@@ -28,7 +31,7 @@ namespace mallform.Models
 
         [StringLength(50)]
 
-
+        [Required]
         public string panNo { get; set; }
 
         
