@@ -5,7 +5,7 @@ using System.Web;
 
 namespace mallform.Models
 {
-    public class Shop
+    public class Unit
     {
 
         public int Id { get; set; }
@@ -15,6 +15,7 @@ namespace mallform.Models
         public string Floor { get; set; }
 
         public string shopNo { get; set; }
+
 
         
 

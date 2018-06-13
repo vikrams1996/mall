@@ -22,8 +22,10 @@ namespace mallform.Models
     {
 
         public DbSet<Tenant> Tenant { get; set; }
-        public DbSet<Shop> Shop { get; set; }
+        public DbSet<Unit > Unit { get; set; }
         public DbSet<Rent> Rent { get; set; }
+
+      
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

@@ -198,12 +198,16 @@
     <Compile Include="Migrations\201806130725579_RequiredDataAnnotationsToTenantTable.Designer.cs">
       <DependentUpon>201806130725579_RequiredDataAnnotationsToTenantTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806131128316_TaleKeysIdentified.cs" />
+    <Compile Include="Migrations\201806131128316_TaleKeysIdentified.Designer.cs">
+      <DependentUpon>201806131128316_TaleKeysIdentified.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Rent.cs" />
-    <Compile Include="Models\Shop.cs" />
+    <Compile Include="Models\Unit.cs" />
     <Compile Include="Models\Tenant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -296,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806130725579_RequiredDataAnnotationsToTenantTable.resx">
       <DependentUpon>201806130725579_RequiredDataAnnotationsToTenantTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806131128316_TaleKeysIdentified.resx">
+      <DependentUpon>201806131128316_TaleKeysIdentified.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

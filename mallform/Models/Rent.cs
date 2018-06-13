@@ -14,5 +14,9 @@ namespace mallform.Models
         public DateTime endDate { get; set; }
 
         public string Amount { get; set; }
+
+        public Tenant Tenant { get; set; }
+
+        public Unit Unit { get; set; }
     }
 }
